@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.alura.agenda.FormularioActivity"
+    tools:showIn="@layout/activity_formulario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp">
+
+        <ImageView
+            android:id="@+id/formulario_foto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/person"
+            android:background="#006aff"/>
+        <Button
+            android:id="@+id/formulario_botao_foto"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fundo_camera"
+            android:elevation="7dp"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/formulario_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/formulario_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="endereco" />
+
+    <EditText
+        android:id="@+id/formulario_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="telefone" />
+
+    <EditText
+        android:id="@+id/formulario_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Site" />
+
+    <RatingBar
+        android:id="@+id/formulario_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="10"
+        android:numStars="5" />
+
+</LinearLayout>
